@@ -2,8 +2,8 @@ class CreateTradesmen < ActiveRecord::Migration[6.0]
   def change
     create_table :tradesmen do |t|
       t.string :name
-      t.float :longitude
-      t.float :latitude
+      t.decimal :longituge
+      t.decimal :latitude
       t.string :email
       t.integer :contact_number
       t.integer :rating
